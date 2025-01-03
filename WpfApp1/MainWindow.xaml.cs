@@ -24,52 +24,6 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            //Polynomial<double> poly = new Polynomial<double>(new double[] { 1, 2, 3 });
-
-            //Polynomial myPolynomial = new Polynomial { Degree = 3, Coefficients = new decimal[] { 1, 2, 3 } };
-            //BindingOperations.SetBinding(CoefficientText, TextBlock.TextProperty, new Binding("Coefficients") { Converter = new PolynomialConverter() });
-
-            //double result = poly.Evaluate(2);
-
-            // y = x^2
-            // input will be in range of two values: 10-20, 2nd input = will be step size 
-            // line y = ax + b, a = 2, b = 1
-
-
-
-            //double[] dataX = { 1, 2, 3, 4, 5 };
-            //double[] dataY = { 1, 4, 9, 16, 25 };
-
-            //double[] dataX1 = {  };
-            //double[] dataY1 = {  };
-
-            //dataX1 = new double[5];
-            //dataY1 = new double[5];
-
-            //List<double> list = new List<double> {  };
-            //List<double> list1 = new List<double> { };
-
-            ////list.Add(4);
-
-            //for (int i = 10; i < 21; i+=2)
-            //{
-            //    //dataX1[i-1] = i;
-            //    //dataY1[i-1] = (2*i+1);
-
-            //    list.Add(i);
-            //    list1.Add(2 * i + 1);
-            //}
-
-            //double[] array1 = list.ToArray();
-            //double[] array2 = list1.ToArray();
-
-
-            //Debug.WriteLine(dataY1[2]);
-            //Debug.WriteLine("DFSDFSD sdfsdfsdfsdf");
-
-
-            //WpfPlot1.Plot.Add.Scatter(array1, array2);
-            //WpfPlot1.Refresh();
         }
 
      
@@ -110,10 +64,6 @@ namespace WpfApp1
                 MatchCollection matches1 = reg2.Matches(term);
                 //Debug.WriteLine("----exp-----");
 
-                /// [-] ?\dx\^\d | [-] ? x\^\d |\d? x|\d / gm
-                //int coef1 = 1;
-                //int pow1 = 1;
-                //int count = 0;
 
 
                 foreach (Match match1 in matches1) {
@@ -321,9 +271,6 @@ namespace WpfApp1
                 Debug.Write("---y----");
                 Debug.WriteLine(i);
             }
-
-
-        
 
 
             WpfPlot1.Plot.Add.Scatter(array11, array22);
